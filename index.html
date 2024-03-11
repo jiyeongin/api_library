@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>search library</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bbj5jvbcmv"
+    ></script>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <div class="loading">
+        <img src="./loading.gif" alt="">
+      </div>
+      <!-- 검색 상자 -->
+      <section class="search">
+        <div class="box">
+          <div class="mic">
+            <a href="#">
+              <img class="mic_icon" src="./img/mic.svg" alt="음성인식" />
+            </a>
+          </div>
+          <div class="search_engine">
+            
+            <p><input type="input" placeholder="도서관 이름 또는 지역 검색" /></p>
+            <img src="./img/search.svg" alt="돋보기" />
+          </div>
+          
+        </div>
+      </section>
+      <!-- 도서관 목록 -->
+      <div id="map" style="width: 100%; height: 100%"></div>
+
+      <!-- 디테일 옵션 창 -->
+      <section class="detail_box">
+        <div class="wrapper">
+          <!-- 도서관 이름 -->
+          <header class="title">
+            <h2>판교인생</h2>
+          </header>
+          <!-- 정보 -->
+          <div class="info">
+            <!-- 중요 정보 -->
+            <div class="boxinfo">
+              <div class="red1">
+                <h3>도서</h3>
+                <div class="line"></div>
+                <h3>4994</h3>
+              </div>
+              <div class="red2">
+                <h3>연속간행물</h3>
+                <div class="line"></div>
+                <h3>8</h3>
+              </div>
+              <div class="red3">
+                <h3>비도서</h3>
+                <div class="line"></div>
+                <h3>0</h3>
+              </div>
+              <div class="blue">
+                <h3>열람좌석수</h3>
+                <div class="line"></div>
+                <h3>65</h3>
+              </div>
+            </div>
+            <!-- 기본 정보 -->
+            <div class="letterinfo">
+              <div class="time">
+                <div class="info-title">운영시간 :</div>
+                <div class="info-contents">
+                  <p class="weekday">09 : 00 ~ 18 : 00 (평일)</p>
+                  <p class="weekend">09 : 00 ~ 14 : 00 (토요일 및 공휴일)</p>
+                  <p class="msg">* 공휴일 휴관</p>
+                </div>
+              </div>
+              <div class="call">
+                <div class="info-title">연락처 :</div>
+                <div class="info-contents">
+                  <p class="call_each">031-620-2817</p>
+                </div>
+              </div>
+              <div class="address">
+                <div class="info-title">주소 :</div>
+                <div class="info-contents">
+                  <p class="address_each">경기도 성남시 분당구 판교역로 99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 홈페이지로 이동 -->
+          <div class="link">
+            <a href="" class="#">홈페이지로 연결</a>
+          </div>
+        </div>
+       
+      </section>
+
+      <!-- 하단 바 -->
+      <footer>
+        <div class="left">
+          <img src="./img/tag.svg" alt="리뷰" />
+          <p>리뷰</p>
+        </div>
+        <div class="line1"></div>
+        <div class="middle">
+          <img src="./img/user.svg" alt="내 도서관" />
+          <p>내 도서관</p>
+        </div>
+        <div class="line2"></div>
+        <div class="right">
+          <img src="./img/add_circle_wght200.svg" alt="탐색" />
+          <p>탐색</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Main Javascript Link -->
+    <script src="./js/data.js"></script>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>
